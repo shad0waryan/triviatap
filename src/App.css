@@ -1,7 +1,15 @@
 * {
   background-color: coral;
 }
+#root {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .App {
+  width: 100%;
+  height: 95vh;
   font-family: comic sans-serif, Arial;
   display: flex;
   flex-wrap: wrap;
@@ -10,13 +18,14 @@
   flex-direction: column;
   margin-top: 0px;
   margin-bottom: 0px;
-  background-image: linear-gradient(90deg,rgb(190, 64, 18), rgb(255, 164, 131));
+  background-color: coral;
 }
 
 .menu {
-  width: 900px;
-  height: 700px;
-  border-radius: 12px;
+  flex-grow: 1;
+  width: 70%;
+  height: 68vh;
+  border-radius: 10px;
   background-color: cornsilk;
   display: flex;
   flex-direction: column;
@@ -24,10 +33,11 @@
   align-items: center;
 }
 
-.quiz{
-  width: 900px;
-  height: 700px;
-  border-radius: 12px;
+.quiz {
+  flex-grow: 1;
+  width: 70%;
+  height: 68vh;
+  border-radius: 10px;
   background-color: cornsilk;
   display: flex;
   flex-direction: column;
@@ -35,20 +45,21 @@
   align-items: center;
 }
 
-.end{
-  width: 900px;
-  height: 700px;
-  border-radius: 12px;
+.end {
+  flex-grow: 1;
+  width: 70%;
+  height: 68vh;
+  border-radius: 10px;
   background-color: cornsilk;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-.buttons{
+.buttons {
   background-color: cornsilk;
 }
-.prev{
+.prev {
   width: 100%;
   background-color: cornsilk;
   display: flex;
@@ -56,87 +67,87 @@
   align-items: center;
   flex-direction: column;
 }
-.pushbutton{
-        display: inline-block;
-        background-color:blueviolet;
-        border-radius: 10px;
-        border: 4px double #cccccc;
-        color: cornsilk;
-        text-align: center;
-        font-size: 28px;
-        padding: 20px;
-        height: 75px;
-        width: 200px;
-        -webkit-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        transition: all 0.5s;
-        cursor: pointer;
-        margin: 5px;
-      }
-.submitbutton{
-        display: inline-block;
-        background-color:blueviolet;
-        border-radius: 10px;
-        border: 4px double #cccccc;
-        color: cornsilk;
-        text-align: center;
-        font-size: 28px;
-        padding: 20px;
-        height: 75px;
-        width: 200px;
-        -webkit-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        transition: all 0.5s;
-        cursor: pointer;
-        margin: 5px;
-      }
-      
-.heading1{
-        display: flex;
-        border-radius: 10px;
-        background-color: lightsalmon ;
-        font-size: 45px;
-        padding: 1.2vw;
-        font-family: cursive;
-        color: whitesmoke;
+.pushbutton {
+  display: inline-block;
+  background-color: blueviolet;
+  border-radius: 10px;
+  border: 4px double #cccccc;
+  color: cornsilk;
+  text-align: center;
+  font-size: 3.5vh;
+  padding: 1vw;
+  height: 8vh;
+  width: 14vw;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
 }
-.optionbutton{
-        display: inline-block;
-        background-color:burlywood;
-        border-radius: 10px;
-        /* border: 5px double white; */
-        color: black;
-        text-align: center;
-        font-size: 22px;
-        padding: 1.2vw;
-        height: auto;
-        width: auto;
-        -webkit-transition: all 0.5s;
-        -moz-transition: all 0.5s;
-        -o-transition: all 0.5s;
-        transition: all 0.5s;
-        cursor: pointer;
-        margin: 0 px;
+.submitbutton {
+  display: inline-block;
+  background-color: blueviolet;
+  border-radius: 10px;
+  border: 4px double #cccccc;
+  color: cornsilk;
+  text-align: center;
+  font-size: 3.5vh;
+  padding: 1vw;
+  height: 8vh;
+  width: 14vw;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
 }
 
-.heading2{
-  font-size: 20px;
-  color:black;
+.heading1 {
+  display: flex;
+  border-radius: 4vh;
+  background-color: lightsalmon;
+  font-size: 5vh;
+  padding: 1.2vw;
+  font-family: cursive;
+  color: whitesmoke;
+}
+.optionbutton {
+  display: inline-block;
+  background-color: burlywood;
+  border-radius: 8px;
+  color: black;
+  text-align: center;
+  font-size: 3vh;
+  padding: 1vh;
+  height: auto;
+  width: auto;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 0 px;
+}
+
+.heading2 {
+  font-size: 2.5vh;
+  color: black;
   background-color: cornsilk;
 }
-.heading3{
-color:black;
-background-color: cornsilk;
+.heading3 {
+  font-size: 3.5vh;
+  color: black;
+  background-color: cornsilk;
 }
-.heading4{
-color:black;
-background-color: cornsilk;
+.heading4 {
+  font-size: 3.2vh;
+  color: black;
+  background-color: cornsilk;
 }
 
-
-.options{
+.options {
   width: 100%;
   background-color: cornsilk;
   display: flex;
@@ -144,20 +155,23 @@ background-color: cornsilk;
   align-items: center;
   flex-direction: column;
 }
-button:hover , .optionbutton:hover {
+button:hover,
+.optionbutton:hover {
   height: 5vw;
-  width: 22vw;
+  width: 20vw;
   background-color: rosybrown;
 }
-button:hover, .pushbutton:hover {
-  height: 80px;
-  width: 240px;
+button:hover,
+.pushbutton:hover {
+  height: 10vh;
+  width: 16vw;
   background-color: purple;
 }
 
-button:focus, .optionbutton:focus{
-  height:5vw;
-  width: 18vw;
+button:focus,
+.optionbutton:focus {
+  height: 5vw;
+  width: 14vw;
   color: black;
   background-color: palegoldenrod;
 }

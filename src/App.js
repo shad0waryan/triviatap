@@ -10,7 +10,7 @@ function App() {
   const [score, setScore] = useState(0);
   return (
     <div className="App">
-      <h1 className="heading1">The Quiz App</h1>   
+      <h1 className="heading1">React Quiz App</h1>   
       <Helmet>
         <meta charSet="utf-8" />
         <title>Quiz </title>
